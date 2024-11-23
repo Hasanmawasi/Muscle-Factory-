@@ -1,0 +1,640 @@
+*{
+    font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+  
+  /* -----------admin link--------------- */
+  .admin{
+  visibility: hidden;
+  }
+  
+  /* .carousel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      width: fi;
+  
+      } */
+  
+    .carousel-inner {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .join {
+      z-index: 1;
+      color: white;
+    }
+    .loginbt{
+      background-color: red !important;
+      border-radius: 12px;
+    }
+    .navbar {
+      backdrop-filter: blur(1px); /* Apply blur effect */
+      background-color: rgba(255, 255, 255, 0.1); /* Add transparency */
+      
+    }
+    
+    .navbar .navbar-nav .nav-link,
+    .navbar-brand {
+      color: white !important; /* Change text color to white */
+      font-weight: bold;
+    }
+    .nav-link:hover{
+      background-color: rgb(11, 10, 10);
+      border-radius: 15px;
+      transform: translateY(-3px);
+    }
+  
+    .cred{
+      color: red;
+    }
+    
+    /* ---------------------------- */
+    body {
+  
+       /* background: linear-gradient(45deg, black, red, black, white, black, red, black);   */
+      background: linear-gradient(black, black, black);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+      
+    }
+    .about-gym{
+      border-radius: 10px;
+      padding: 10%;
+      /* background: linear-gradient(30deg, rgb(19, 18, 18), white, black); */
+      background: linear-gradient(45deg, black, red, white); 
+    }
+    .about-section{
+      background-color: black;
+      clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+      /* width: 100vw; */
+  }
+  
+    #about{
+      text-align: center;
+      color: white;
+  
+    }
+    /* ------------- join us button--------- */
+    
+    button {
+      all: unset;
+    }
+    
+    
+    /* --------------submit form--------------- */
+    .form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      background-image: linear-gradient(45deg, #323232,
+      #fc0b0b);
+      border-radius: 2.5em;
+      padding: 30px;
+      width: 300px;
+      height: 350px;
+    }
+    
+    .form::before {
+      content: '';
+      background-image: linear-gradient(45deg, #ff0000, 
+      #0e0d0c , white);
+      height: 360px;
+      width: 315px;
+      position: absolute;
+      margin-top: -34px;
+      margin-left: px;
+      z-index: -1;
+      border-radius: 2.7em;
+    }
+    
+    .button {
+      margin-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      background: #f9f1f1;
+      color: black;
+      padding: 0.7em 5.5em;
+      display: flex;
+      align-items: center;
+      border: 2px solid #66da4300;
+      border-radius: 5em;
+      overflow: hidden;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    
+    .button:hover {
+      border: 2px solid #000000;
+      background: #00000000;
+      color: #f01304;
+    }
+    
+    .button:active {
+      border: 2px solid #66da4300;
+      background: #ff0000;
+      color: black;
+    }
+    
+    .input {
+      width: calc(100% - 10px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #66da4300;
+      border-bottom: 1px solid #000000;
+      outline: none;
+      background-color: transparent;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: 0.2s;
+    }
+    
+    .input:focus {
+      border: 1px solid #ef2b2b00;
+      border-bottom: 1px solid #ff0000;
+      background-color: transparent;
+      color: white;
+    }
+    
+    .input::placeholder {
+      color: #000000;
+    }
+    
+    .textarea {
+      font-family: Arial, Helvetica, sans-serif;
+      width: calc(100% - 10px);
+      padding: 8px;
+      height: 100px;
+      margin-bottom: 20px;
+      border: 1px solid #00000000;
+      border-bottom: 1px solid #000000;
+      outline: none;
+      background-color: transparent;
+      color: #d4d4d4;
+    }
+    
+    .textarea::placeholder {
+      color: #000000;
+    }
+    
+    .textarea:focus {
+      border: 1px solid #66da4300;
+      border-bottom: 1px solid #ff0000;
+      background-color: transparent;
+      color: white;
+    }
+    /* ---------------------- */
+  
+  /* ------------------coaches style-------------- */
+  
+  .imgc {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .coachesCont {
+    width: 100%;
+    /* width: 820px; */
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    margin-inline: 50px;
+  }
+  
+  .card {
+    min-width: 70px;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 3;
+    cursor: pointer;
+    position: relative;
+    transition: flex-grow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-timing: 0.35s;
+  }
+  /* .card.active {
+    flex-grow: 100;
+  } */
+ 
+  .card:hover {
+    flex-grow: 7;
+  }
+  .pcard{
+   opacity: 0;
+   
+  }
+  .pcard:hover{
+  opacity: 1;
+  color: white;
+  }
+  .card > .background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.4);
+    z-index: 1;
+    transition: var(--transition-timing) ease;
+  }
+  .card:hover > .background {
+    filter: brightness(1);
+  }
+  
+  .card > .card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+  }
+  .card:hover > .card-content {
+    inset: 20px;
+    top: auto;
+  }
+  
+  .card-content > * {
+    transition: var(--transition-timing);
+  }
+  
+  
+  .card-content >.title {
+    white-space: pre;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+  }
+  .card:hover .title {
+    opacity: 1;
+    translate: 0 0;
+  }
+  
+  
+  /* -------------foooter------------------ */
+  .footer {
+      background-color: #151515;
+      padding: 80px 0;
+      padding-bottom: 0px;
+  }
+  
+  .container {
+      max-width: 1170px;
+      margin: auto;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
+  .footer-col {
+      width: 25%;
+      padding: 0 15px;
+  }
+  
+  .footer-col h4 {
+      font-size: 18px;
+      color: #FFF;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  
+  .footer-col h4::before {
+      content: "";
+      position: absolute;
+      left: 47;
+      bottom: -10px;
+      background-color: #f51414;
+      width: 80px;
+      height: 2px;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+      color: #DDD;
+      display: block;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+      color: #FFF;
+      padding-left: 7px;
+  }
+  
+  .footer-col .social-links a {
+      color: #FFF;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 10px 10px 0;
+      line-height: 40px;
+      transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+      color: #151515;
+      background-color: #FFF;
+  }
+  
+  /* ------------------prices--------------------------- */
+  
+  .cardp {
+  margin: 20px 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-bottom: 2rem;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, black, red, white);
+  padding: 1.5rem;
+  box-shadow: 0px 0px 60px hsla(0, 0%, 67%, 0.826);
+  }
+  
+  .headerp {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .titlep {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #fff
+  }
+  
+  .pricep {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff
+  }
+  
+  .descp {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.625;
+  color: black;
+  }
+  
+  .listsp {
+  margin-bottom: 1.5rem;
+  flex: 1 1 0%;
+  color: black;
+  }
+  
+  .listsp .listp {
+  margin-bottom: 0.5rem;
+  display: flex;
+  margin-left: 0.5rem
+  }
+  
+  .listsp .listp svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  color: black;
+  }
+  
+  .action {
+  border: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  background-color: white;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: black;
+  }
+  
+  .action:hover{
+    border: none;
+    color: white;
+    background-color: black;
+  }
+  
+  .h1-prices{
+    text-align: center;
+    color: red;
+    background-color: white;
+    padding: 5px;
+  }
+  
+
+  .cap{
+    color: red;
+    animation: brighten 2s infinite alternate;
+  
+  }
+  /* ---------bmi-------------------- */
+  
+  
+.bmi-p, .bmi-li{
+  text-align: justify;
+}
+
+.bmi-img{
+  width: 200px;
+  height: 200px;
+}
+
+.bmi-container{
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+  /* width: 98vw; */
+  align-items: center;
+  height: 100%;
+  background-color: rgb(219, 219, 219)!important;
+
+}
+
+.desc{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+
+
+.inputs-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose{
+  border:none;
+  border-bottom: 1px solid gray;
+}
+
+.calculator {
+  align-self:flex-end;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.781);
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.calculator input, .calculator select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  /* border: 1px solid #ccc; */
+  border-radius: 4px;
+}
+.calculator button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, black, red, white); 
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.calculator button:hover {
+  background: linear-gradient(45deg,white, red, black ); 
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+/* download button styling */
+.download-button {
+  background-color: #0064b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  /* display: none; */
+}
+
+.download-button:hover {
+  display: none;
+  background-color: black;
+}
+
+.arrow-down {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+table{
+  display: none;
+  
+}
+
+@media screen and (max-width:480px){
+
+  .cardp{
+    align-self: center;
+  }
+
+  .bmi-container{
+    height: 100%;
+    display: flex;
+      flex-direction: column;
+      width: 100vw;
+      gap: 2rem;
+  }
+
+  .bmi-desc{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .calculator{
+      align-self: center;
+  }
+
+  .desc-item{
+      align-self: center;
+  }
+}
+
+
+  /* ============================== */
+  @keyframes brighten {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1), 
+                   0 0 30px rgba(255, 255, 255, 1), 
+                   0 0 40px rgba(255, 255, 255, 1);
+    }
+  }
+
+
+  @media screen and (max-width:480px){
+    body{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  

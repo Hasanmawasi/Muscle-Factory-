@@ -1,0 +1,145 @@
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(219, 219, 219)!important;
+    margin: 0;
+} */
+.main-bmi{
+    color: white;
+}
+.bmi-p, .bmi-li{
+    text-align: justify;
+}
+
+.bmi-img{
+    width: 200px;
+    height: 200px;
+}
+
+.bmi-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    align-items: center;
+    height: 100vh;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   
+}
+
+
+
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose{
+    border:none;
+    border-bottom: 1px solid gray;
+}
+
+.calculator {
+    align-self:flex-end;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.781);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+}
+.calculator button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, black, red, white); 
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.calculator button:hover {
+    background: linear-gradient(45deg,white, red, black ); 
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+/* download button styling */
+.download-button {
+    background-color: #0064b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: none;
+}
+
+.download-button:hover {
+    display: none;
+    background-color: black;
+}
+
+.arrow-down {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+table{
+    display: none;
+    
+}
+
+@media screen and (max-width:480px){
+    .bmi-container{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        gap: 2rem;
+    }
+
+    .desc{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .calculator{
+        align-self: center;
+    }
+
+    .desc-item{
+        align-self: center;
+    }
+}

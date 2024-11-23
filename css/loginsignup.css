@@ -1,0 +1,144 @@
+*{
+    font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Jost", sans-serif;
+    /* background: linear-gradient(to bottom, white,gray,black); */
+    /* ------ */
+    background-image: url('../photos/invictus\ go\ _\ Almaty\ _\ gym\ zone\ _\ 2022.jpg'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+  }
+
+  .title {
+    color: rgb(211, 0, 0);
+    /* box-shadow: 5px 20px 50px rgb(255, 255, 255); */
+    text-shadow: 1px 4px 5px rgb(250, 250, 250); 
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    z-index: 9999; /* Ensure the title is above other elements */
+  }
+
+  .main {
+    width: 350px;
+    height: 500px;
+    /* background: red; */
+    overflow: hidden;
+    /* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
+      no-repeat center/ cover; */
+    background: linear-gradient(45deg, black, rgb(211, 0, 0), white);
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgb(136, 136, 136);
+  }
+  #chk {
+    display: none;
+  }
+  .signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  label {
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  input {
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .signup-button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: linear-gradient(to bottom, white,gray,black);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  .signup-button:hover {
+    background: linear-gradient(to bottom, white, gray);
+  }
+  
+  .login-button {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: linear-gradient(to bottom, white,rgb(211, 0, 0), gray);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  .login-button:hover {
+    background: linear-gradient(to bottom, white, rgb(185, 5, 5));
+  }
+  .login {
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: 0.8s ease-in-out;
+  }
+  .login label {
+    color: rgb(212, 0, 0);
+    transform: scale(0.6);
+  }
+  
+.check {
+  transform: translateY(-500px);
+  transition: 0.8s ease-in-out;
+}
+.uncheck{
+  transform: scale(0.6);
+}
+
+  #chk:checked ~ .login {
+    transform: translateY(-500px);
+  }
+  #chk:checked ~ .login label {
+    transform: scale(1);
+  }
+  #chk:checked ~ .signup label {
+    transform: scale(0.6);
+  }
